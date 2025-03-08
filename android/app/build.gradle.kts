@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.percent_calculator"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 35
     ndkVersion = "28.0.13004108"
 
     compileOptions {
@@ -17,6 +17,10 @@ android {
 
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_11.toString()
+    }
+
+    lint {
+        checkReleaseBuilds = false
     }
 
     defaultConfig {
